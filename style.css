@@ -1,0 +1,104 @@
+/* CSS Styling */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #61575b;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h1 {
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#task-input {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#task-input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+#add-button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#add-button:hover {
+    background-color: #0056b3;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background: #f9f9f9;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+
+li:first-child {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+li:last-child {
+    border-bottom: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+.delete-btn {
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background: #c82333;
+}
